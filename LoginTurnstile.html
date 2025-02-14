@@ -66,6 +66,9 @@ function _turnstileCb() {
     turnstile.render('#myWidget', {
       sitekey: '0x4AAAAAAA8zY1Su-JwkC0hC',
       theme: 'light',
+      callback: (token) => {
+          console.log('Turnstile token:', token);
+        }
     });
 }
 </script>
